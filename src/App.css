@@ -1,38 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Nunito+Sans:wght@300&family=Roboto:wght@400;700&family=Work+Sans:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Nunito+Sans:wght@300&family=Roboto:wght@400;700&family=Work+Sans:ital,wght@0,700;1,400&family=Ysabeau+SC:wght@500&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0A2647;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #E3F4F4;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-family: 'Ysabeau SC', sans-serif;}
+
+.TodoWrapper {
+  background: #144272;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TodoForm {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #669adf;
+  padding: 0.5rem 1rem;
+  margin-top: 16px;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #ffffff;
+  font-family: 'Exo 2', sans-serif;
+}
+
+
+.todo-input::placeholder {
+  color: #f5eded4d;
+  
+}
+
+.todo-btn {
+  background: #2C74B3;
+  color: #fff;
+  border: #1B6B93;
+  padding: 8px 8px 6px 7px;
+  cursor: pointer;
+
+  
+}
+
+.Todo {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #0f77ac;
+  color: #c5eafd;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-trash {
+  margin-left: 0.75rem;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completed {
+  color: #d0edfc;
+  text-decoration: line-through;
 }
